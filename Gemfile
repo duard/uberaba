@@ -1,6 +1,10 @@
-source 'https://rubygems.org'
-
+source :rubygems
 gem 'rails', '3.2.11'
+
+gem 'inherited_resources'
+gem 'simple_form'
+gem 'devise'
+gem 'cancan'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
