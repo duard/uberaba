@@ -23,13 +23,13 @@ gem 'jquery-rails'
 
 
 group :development do
-  gem 'hash_extension'
-  gem 'quiet_assets'
-  gem 'hpricot'
-  gem 'ruby_parser'
-  gem "nifty-generators"
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'meta_request'
+  # gem 'hash_extension'
+  # gem 'quiet_assets'
+  # gem 'hpricot'
+  # gem 'ruby_parser'
+  # gem "nifty-generators"
+  # gem 'better_errors'
+  # gem 'binding_of_caller'
+  # gem 'meta_request'
   gem 'mailcatcher'
 end
