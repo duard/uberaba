@@ -9,12 +9,12 @@ defaults: &DEFAULTS
 
 development:
     <<: *DEFAULTS
-    database: AppMedicaD
+    database: UberabaD
 
 production:
     <<: *DEFAULTS
-    database: AppMedicaP
+    database: UberabaP
 
 test:
     <<: *DEFAULTS
-    database: AppMedicaT
+    database: UberabaT
