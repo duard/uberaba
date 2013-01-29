@@ -27,9 +27,9 @@ group :development do
   # gem 'quiet_assets'
   # gem 'hpricot'
   # gem 'ruby_parser'
-  # gem "nifty-generators"
+  gem "nifty-generators"
   # gem 'better_errors'
   # gem 'binding_of_caller'
   # gem 'meta_request'
-  gem 'mailcatcher'
+  # gem 'mailcatcher'
 end
