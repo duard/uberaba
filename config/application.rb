@@ -62,5 +62,9 @@ module HeroApp
     # para deploy no heroku
     config.assets.initialize_on_precompile = false
 
+    # para compilar todos CSSs e JSs
+    config.assets.precompile += %w( *.js *.scss *.coffee *.css )
+
+
   end
 end
