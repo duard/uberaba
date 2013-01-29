@@ -6,6 +6,7 @@ HeroApp::Application.routes.draw do
 
   namespace :admin  do
     root to: "application#index"
+    resource
   end
 
 end
