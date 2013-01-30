@@ -9,19 +9,36 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- //= require foundation
+ *= foundation
+ *= require template
  */
 
- ul.hmenu {
-   list-style: none;
-   margin: 0 0 2em;
-   padding: 0;
- }
 
- ul.hmenu li {
-   display: inline;
- }
+/* styles for layout */
+body {
+  padding-top: 60px;
+}
 
- body {
-   background-color: #FFFFFF;
+
+/*responsible facebook comments*/
+.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
+    width: 90% !important;
+}
+
+.fb-like-box {
+  width: 90% !important;
+}
+
+facebookOuter {
+    background-color:#F4F4F4;
+    width:250px;
+    padding:10px 0 10px 10px;
+    height:250px;
+    border:1px solid #CCCCCC;
+  }
+.facebookInner {
+   height:250px;
+   overflow:hidden;
  }
+.fb-like-box { background: #FFFFFF; }
+
