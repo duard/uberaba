@@ -3,6 +3,13 @@
 <p>É o kelme ?</p>
 <p>fale baixo<p>
 
+<hr>
+<%= Settings.env.mensagem %>
+I can put in a %(myclass)span with a class% like this.
+<%= RedCloth.new("Some text").to_html %>
+<%= RedCloth.new("%(first)testando%").to_html %>
+<hr>
+
 <%= image_tag "rails.png" %>
 <%= image_tag "uberaba.png" %>
 

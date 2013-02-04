@@ -65,6 +65,7 @@ module HeroApp
     # para compilar todos CSSs e JSs
     config.assets.precompile += %w( *.js *.scss *.coffee *.css )
 
-
+    # configura versao
+    config.assets_version = File.read('assets_version').strip
   end
 end

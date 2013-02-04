@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>HeroApp</title>
-  <%= stylesheet_link_tag    "admin" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-<%= yield %>
-<%= render "sharedadmin/side"
-</body>
+<html lang="en">
+  <%= render 'sharedadmin/head' %>
+  <body>
+
+    <%= render "sharedadmin/menu" %>
+    <%= render "sharedadmin/sidebar" %>
+    <%= render "sharedadmin/content" %>
+    <%= render "sharedadmin/scripts" %>
+
+  </body>
 </html>

@@ -1,0 +1,17 @@
+defaults: &defaults
+  host: 0.0.0.3000
+  assets_version: 1.0
+  appname:  "AppName"
+  empresa: "Empresa"
+
+development:
+  <<: *defaults
+  mensagem: "Olá meu mundo DESENVOLVIMENTO"
+
+test:
+  <<: *defaults
+  mensagem: "Olá meu mundo TESTES"
+
+production:
+  <<: *defaults
+  mensagem: "Olá meu mundo PRODUÇÃO"
