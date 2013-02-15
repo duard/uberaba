@@ -1,0 +1,15 @@
+<div class="span7 offset5">
+  <h2>Encontre profissionais de saúde e</h2>
+  <h1>Marque suas consultas</h1>
+  <hr>
+  <form accept-charset="UTF-8" action="/home/index" method="post">
+    <label>Buscar por</label>
+    <%= password_field_tag(:password) %>
+    <br>
+    <label>do plano de saúde</label>
+    <%= telephone_field(:user, :phone) %>
+    <br>
+    <label>Na localidade</label>
+    <%= email_field(:user, :address) %>
+  </form>
+</div>

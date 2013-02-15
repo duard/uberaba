@@ -1,0 +1,4 @@
+ pt-BR:
+  devise:
+    sessions:
+      link: 'Войти'

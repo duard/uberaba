@@ -1,0 +1,12 @@
+<h2><span>Profile</span></h2>
+<div class="row-fluid">
+
+<%= @user.email %>
+<br>
+<%= @user.current_sign_in_ip %>
+<br>
+<%= @user.profile.fullname %>
+<hr>
+<%#= render "formulario" %>
+<%= link_to "Editar Perfil", edit_user_profile_path(@user, @profile)  %>
+</div>

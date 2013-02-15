@@ -8,37 +8,8 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= foundation
- *= require template
+ *= require bootstrap_and_overrides
+ *= require estilo
+ *= require customizado
+ *= require datepicker
  */
-
-
-/* styles for layout */
-body {
-  padding-top: 60px;
-}
-
-
-/*responsible facebook comments*/
-.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
-    width: 90% !important;
-}
-
-.fb-like-box {
-  width: 90% !important;
-}
-
-facebookOuter {
-    background-color:#F4F4F4;
-    width:250px;
-    padding:10px 0 10px 10px;
-    height:250px;
-    border:1px solid #CCCCCC;
-  }
-.facebookInner {
-   height:250px;
-   overflow:hidden;
- }
-.fb-like-box { background: #FFFFFF; }
-

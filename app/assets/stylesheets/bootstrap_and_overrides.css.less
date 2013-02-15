@@ -1,5 +1,7 @@
 @import "twitter/bootstrap/bootstrap";
-@import "twitter/bootstrap/responsive";
+body {
+  padding-top: 40px;
+}
 
 // Set the correct sprite paths
 @iconSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings");
@@ -30,3 +32,33 @@
 //
 // Example:
 // @linkColor: #ff0000;
+
+// Example:
+// @textColor: #454545;
+// @linkColor: #b41812;
+// @linkColorHover: lighten(@linkColor, 15%);
+
+@import "twitter/bootstrap/responsive";
+
+
+@cor1 : #2D4B73;
+@cor2 : #22466C;
+@cor3 : #F5F3CC; // fundo claro
+@cor4 : #CFC69F; // fundo escuro
+
+// @navbarBackground: #16365B;
+// @navbarBackgroundHighlight: lighten(@navbarBackground, 10%);
+
+@navbarBackground: @cor1;
+@navbarBackgroundHighlight: lighten(@cor2, 0%);
+
+@navbarText: green;
+
+@navbarLinkColor: lighten(@cor4, 10%);
+@navbarLinkColorHover: lighten(@cor3, 0%);
+@navbarLinkColorActive: white;
+
+// @navbarLinkBackgroundActive: lighten(gray, 40%);
+@navbarLinkBackgroundHover:  lighten(@navbarBackground, 13%);
+@import url('http://twitter.github.com/bootstrap/assets/css/bootstrap.css');
+

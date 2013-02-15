@@ -27,11 +27,12 @@ module HeroApp
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    # config.time_zone = 'Central Time (US & Canada)'
+    config.time_zone = 'Brasilia'
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
+    config.i18n.available_locales = [:en, :"pt-BR"]
+    config.i18n.default_locale = :"pt-BR"
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
@@ -51,6 +52,7 @@ module HeroApp
     # This will create an empty whitelist of attributes available for mass-assignment for all models
     # in your app. As such, your models will need to explicitly whitelist or blacklist accessible
     # parameters by using an attr_accessible or attr_protected declaration.
+    # parameters by using an attr_accessible or attr_protected declaration.
     config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
@@ -60,12 +62,37 @@ module HeroApp
     config.assets.version = '1.0'
 
     # para deploy no heroku
-    config.assets.initialize_on_precompile = false
+    # config.assets.initialize_on_precompile = false
 
     # para compilar todos CSSs e JSs
-    config.assets.precompile += %w( *.js *.scss *.coffee *.css )
+    # config.assets.precompile += %w( *.js *.scss *.coffee *.css )
 
     # configura versao
-    config.assets_version = File.read('assets_version').strip
+    # config.assets_version = File.read('assets_version').strip
+
+
+
+    # Configurando o EMAIL
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "carroeciaveiculos.com.br",
+      :user_name            => "carroecia.vendas@gmail.com",
+      :password             => "carroecia" ,
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "carroeciaveiculos.com.br"
+    }
+
+    # como configurar as variaveis
+    #
+    # export GMAIL_USER=my_gmail_user_name@gmail.com
+    # export GMAIL_PASSWORD=my_gmail_password
+    #
+
+
   end
 end

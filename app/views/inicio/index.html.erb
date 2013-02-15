@@ -1,38 +1,23 @@
-<h1>Uberaba</h1>
-<h2>Heyyyyy, respeite viu ?</h2>
-<p>É o kelme ?</p>
-<p>fale baixo<p>
+<%= render "frente/features" %>
+<%= render "frente/testimonials" %>
 
-<hr>
-<%= Settings.env.mensagem %>
-I can put in a %(myclass)span with a class% like this.
-<%= RedCloth.new("Some text").to_html %>
-<%= RedCloth.new("%(first)testando%").to_html %>
-<hr>
-
-<%= image_tag "rails.png" %>
-<%= image_tag "uberaba.png" %>
-
-<hr>
-
-# views/devise/menu/_login_items.html.erb
-<% if user_signed_in? %>
-  <li>
-  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-  </li>
-<% else %>
-  <li>
-  <%= link_to('Login', new_user_session_path)  %>
-  </li>
-<% end %>
-
-# views/devise/menu/_registration_items.html.erb
-<% if user_signed_in? %>
-  <li>
-  <%= link_to('Edit registration', edit_user_registration_path) %>
-  </li>
-<% else %>
-  <li>
-  <%= link_to('Register', new_user_registration_path)  %>
-  </li>
-<% end %>
+<div class="row">
+    <div class="span4">
+      <% if user_signed_in? %>
+        <h2>Special offers</h2>
+        <p>All registered users will receive free monkeys!</p>
+      <% end %>
+      <%= my_helper %>
+      <%= show_user %>
+      <hr>
+    </div>
+    <div class="span4">
+      caixa 1
+    </div>
+    <div class="span4">
+      caixa 2
+    </div>
+    <div class="span4">
+      caixa 3
+    </div>
+</div>

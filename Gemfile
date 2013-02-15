@@ -21,13 +21,18 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-  gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+
+  gem "less-rails"
   gem "therubyracer"
+
   gem 'less-rails-fontawesome'
 
   # Add these gems
   gem 'compass-rails'
   gem 'zurb-foundation'
+
+  gem 'bootstrap-datepicker-rails'
+
 end
 
 gem 'jquery-rails'
@@ -43,4 +48,16 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
   # gem 'mailcatcher'
+  gem 'pry'
+  gem 'pry-rails'
+end
+
+# Gemfile
+gem 'rails-console-tweaks'
+
+# add any gems that should be available only to the console
+group :console do
+  gem 'wirb'
+  gem 'hirb'
+  gem 'awesome_print'
 end

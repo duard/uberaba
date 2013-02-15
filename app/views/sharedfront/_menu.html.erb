@@ -1,0 +1,32 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container menu">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#"><%= Settings.env.appname %></a>
+      <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class="nav">
+          <%= nav_link 'Início', inicio_path %>
+          <%= nav_link 'Profissionais', login_path%>
+          <%= nav_link 'Planos de Saúde', login_path%>
+          <li class="divider-vertical"></li>
+          <%= nav_link 'Como Funciona', login_path %>
+          <%= nav_link 'Quem Somos Nós', login_path %>
+        </ul>
+
+        <ul class="nav pull-right">
+          <li><%= entrar_sair %></li>
+          <li class="divider-vertical"></li>
+          <li><%= registrar_admin %></li>
+        </ul>
+
+      </div><!-- /.nav-collapse -->
+    </div>
+  </div><!-- /navbar-inner -->
+</div><!-- /navbar -->
+
+<!--           <li><button type="button" class="btn btn-success"><i class="icon-user icon-white"></i>  Cadastrar-se</button></li> -->
+

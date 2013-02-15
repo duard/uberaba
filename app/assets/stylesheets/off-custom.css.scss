@@ -1,0 +1,90 @@
+// html {
+
+//   background: url("saude2.jpeg") ;
+
+//   position: absolute;
+//   z-index: 100;
+//   width: 100%;
+//   height: 100%;
+//   // overflow: hidden;
+//   background-position: center top;
+//   background-repeat: no-repeat;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+
+// }
+
+html{
+  /* This image will be displayed fullscreen */
+  // background:url('http://farm8.staticflickr.com/7218/7289572558_44c110c510_h.jpg') no-repeat center center;
+    background: url("saude7.jpeg") ;
+
+  /* Ensure the html element always takes up the full height of the browser window */
+  min-height:100%;
+
+  /* The Magic */
+  background-size:cover;
+
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  // background-position: center top;
+  // background-repeat: no-repeat;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+
+}
+
+
+html  {
+  background: linear-gradient(45deg, #020031 0%, #6D3353 100%) repeat scroll 0 0 transparent;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
+  color: #FFFFFF;
+  // padding: 40px 0;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+}
+
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -63px;
+  background-color: #00FF00;
+}
+
+.push {
+  height: 63px;
+}
+
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container {
+  // padding-top: 60px;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  background-color: transparent !important;
+}
+
+
+.link_footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 86px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
