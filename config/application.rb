@@ -72,16 +72,6 @@ module HeroApp
 
 
 
-    # Configurando o EMAIL
-    config.action_mailer.smtp_settings = {
-      :address              => "smtp.gmail.com",
-      :port                 => 587,
-      :domain               => "carroeciaveiculos.com.br",
-      :user_name            => "carroecia.vendas@gmail.com",
-      :password             => "carroecia" ,
-      :authentication       => :plain,
-      :enable_starttls_auto => true
-    }
 
     config.action_mailer.default_url_options = {
       :host => "carroeciaveiculos.com.br"
